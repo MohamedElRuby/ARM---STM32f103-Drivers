@@ -1,0 +1,7 @@
+../Src/UART_program.c:14:6:UART_voidinit	4	static
+../Src/UART_program.c:69:6:UART_voidTxEnable	4	static
+../Src/UART_program.c:72:6:UART_voidTxDisable	4	static
+../Src/UART_program.c:76:6:UART_voidRxEnable	4	static
+../Src/UART_program.c:79:6:UART_voidRxDisable	4	static
+../Src/UART_program.c:83:6:UART_voidSendString	16	static
+../Src/UART_program.c:87:4:UART_RecieveString	16	static

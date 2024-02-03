@@ -1,0 +1,2 @@
+../Src/DMA__program.c:15:6:DMA_voidChannelInit	16	static
+../Src/DMA__program.c:90:6:DMA_voidStartChannel	24	static

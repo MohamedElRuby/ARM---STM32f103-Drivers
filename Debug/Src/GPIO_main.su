@@ -1,0 +1,2 @@
+../Src/GPIO_main.c:23:6:LED	8	static
+../Src/GPIO_main.c:35:5:Gpio_main	8	static

@@ -1,0 +1,75 @@
+/*
+ *
+ *  Created on: DEC 27, 2023
+ *      Author: ElRuby
+ */
+
+#ifndef GPIO_PRIVATE_H
+#define GPIO_PRIVATE_H
+
+#define GPIOA_BASE_ADD		 0x40010800
+
+#define GPIOA_CRL		 *((u32*)(GPIOA_BASE_ADD + 0x00))
+#define GPIOA_CRH		 *((u32*)(GPIOA_BASE_ADD + 0x04))
+#define GPIOA_IDR		 *((u32*)(GPIOA_BASE_ADD + 0x08))
+#define GPIOA_ODR		 *((u32*)(GPIOA_BASE_ADD + 0x0C))
+#define GPIOA_BSRR		 *((u32*)(GPIOA_BASE_ADD + 0x10))
+#define GPIOA_BRR		 *((u32*)(GPIOA_BASE_ADD + 0x14))
+#define GPIOA_LCKR		 *((u32*)(GPIOA_BASE_ADD + 0x18))
+
+
+#define GPIOB_BASE_ADD		 0x40010C00
+
+#define GPIOB_CRL		 *((u32*)(GPIOB_BASE_ADD + 0x00))
+#define GPIOB_CRH		 *((u32*)(GPIOB_BASE_ADD + 0x04))
+#define GPIOB_IDR		 *((u32*)(GPIOB_BASE_ADD + 0x08))
+#define GPIOB_ODR		 *((u32*)(GPIOB_BASE_ADD + 0x0C))
+#define GPIOB_BSRR		 *((u32*)(GPIOB_BASE_ADD + 0x10))
+#define GPIOB_BRR		 *((u32*)(GPIOB_BASE_ADD + 0x14))
+#define GPIOB_LCKR		 *((u32*)(GPIOB_BASE_ADD + 0x18))
+
+
+#define GPIOC_BASE_ADD		 0x40011000
+
+#define GPIOC_CRL		 *((u32*)(GPIOC_BASE_ADD + 0x00))
+#define GPIOC_CRH		 *((u32*)(GPIOC_BASE_ADD + 0x04))
+#define GPIOC_IDR		 *((u32*)(GPIOC_BASE_ADD + 0x08))
+#define GPIOC_ODR		 *((u32*)(GPIOC_BASE_ADD + 0x0C))
+#define GPIOC_BSRR		 *((u32*)(GPIOC_BASE_ADD + 0x10))
+#define GPIOC_BRR		 *((u32*)(GPIOC_BASE_ADD + 0x14))
+#define GPIOC_LCKR		 *((u32*)(GPIOC_BASE_ADD + 0x18))
+
+
+#define GPIO_HIGH 1
+#define GPIO_LOW  0
+
+#define PORTA 0
+#define PORTB 1
+#define PORTC 2
+
+
+#define GPIO_INPUT_ANALOG		0b0000
+#define GPIO_INPUT_FLOATING		0b0100
+#define GPIO_INPUT_PULL_UP_DOWN 0b1000
+
+#define GPIO_OUTPUT_2MHZ_PP		0b0010
+#define GPIO_OUTPUT_2MHZ_OD		0b0110
+#define GPIO_OUTPUT_2MHZ_AFPP	0b1010
+#define GPIO_OUTPUT_2MHZ_AFOD	0b1110
+
+#define GPIO_OUTPUT_10MHZ_PP	0b0001
+#define GPIO_OUTPUT_10HZ_OD		0b0101
+#define GPIO_OUTPUT_10MHZ_AFPP	0b1001
+#define GPIO_OUTPUT_10MHZ_AFOD	0b1101
+
+#define GPIO_OUTPUT_50MHZ_PP	0b0011
+#define GPIO_OUTPUT_50MHZ_OD	0b0111
+#define GPIO_OUTPUT_50MHZ_AFPP	0b1011
+#define GPIO_OUTPUT_50MHZ_AFOD	0b1111
+
+
+
+
+
+
+#endif
